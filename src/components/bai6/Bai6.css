@@ -1,0 +1,58 @@
+.container-bai6{
+    width: 100%;
+}
+.container-bai6-dark{
+    width: 100%;
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+.header-bai6{
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    
+    box-shadow:  1px 1px 50px 1px rgb(67, 60, 60);
+    font-weight: 700;
+}
+.dark-mode{
+    cursor: pointer;
+}
+.content-header{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-search-bai6{
+    width: 180px;
+    height: 30px;
+    border: 1px solid gainsboro;
+
+}
+.search-fillter{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.select-bai6{
+    width: 120px;
+    height: 30px;
+}
+.main-bai6{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon-search-bai6{
+    position: absolute;
+    top: 9px;
+    left:156px;
+}
+.btn-back{
+    margin: 10px;
+}

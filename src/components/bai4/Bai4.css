@@ -1,0 +1,32 @@
+.container-bai4{
+    width: 1519.2px;
+    height: 760px;
+    background-color: rgb(30, 0, 77);
+}
+.header-search{
+    height: 50px;
+    background-color: rgb(53, 2, 135) ;
+    display: flex;
+    justify-content: space-between;
+}
+.input-search{
+    background-color: rgb(53, 2, 135) ;
+    margin: 10px;
+    border-radius: 30px;
+    color: wheat;
+    font-size: 15px;
+    border: 2px solid rgb(30, 0, 77);
+    font-weight: 500;
+}
+.list-movie{
+    margin: 20px;
+    display: flex;
+
+}
+.btn-back{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+}

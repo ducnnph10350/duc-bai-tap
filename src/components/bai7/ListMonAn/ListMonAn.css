@@ -1,0 +1,35 @@
+.container-list-mon-an{
+    width: 370px;
+    height: 300px;
+    margin: 10px;
+}
+.img-mon-an{
+    width: 370px;
+    height: 200px;
+    border-radius: 20px
+}
+.fa-solid.fa-star{
+    color: yellow;
+}
+.content-list-bai7{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+}
+.rate-bai7{
+    font-size: 15px;
+
+    background-color: rgb(118, 222, 222);
+    padding: 4px;
+    border-radius: 10px;
+}
+.footer-mon-an-bai7{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+}
+.detivery-fee{
+    color: rgb(181, 178, 178);
+}

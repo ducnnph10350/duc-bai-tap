@@ -1,0 +1,12 @@
+.container-not-found{
+    width: 500px;
+    background-color: #4B0082;
+    color: white;
+    box-shadow: 1px 1px 50px 1px rgb(17, 17, 17);
+    border-radius: 10px;
+    padding: 90px;
+}
+.text-not-found{
+    font-size: 23px;
+    font-weight: 500x;
+}

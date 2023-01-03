@@ -1,0 +1,29 @@
+.container-listCountry{
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+.img-country{
+    border-radius: 15px 15px 0px  0px;
+    width: 100%;
+
+
+}
+.info-country{
+    font-weight: 500;
+}
+.span-info{
+    font-weight: 200;
+
+}
+.name-country{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.info-bai6{
+    margin: 15px;
+}

@@ -1,0 +1,50 @@
+.slider{
+    width: 100px;
+}
+.main-bai7{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.container-bai7{
+    width: 100%;
+}
+.input-search-bai7{
+    height: 50px;
+    width: 100%;
+    padding:0 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.div-input-search-bai7{
+    position: relative;
+
+}
+.input-search-bai7::placeholder{
+    font-size: 20px;
+}
+.icon-search-bai7{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 20px;
+
+}
+.radio-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+.fillter-bai7{
+    width: 20%;
+}
+.content-bai7{
+    width: 80%;
+    display:  flex;
+    flex-wrap: wrap;
+
+}
+.checkBox-bai7{
+    margin: 10px;
+}

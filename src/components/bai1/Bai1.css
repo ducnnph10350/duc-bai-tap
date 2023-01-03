@@ -1,0 +1,55 @@
+.container-bai1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-bai1{
+    text-align: center;
+    width: 40%;
+    height: 80%;
+}
+.title-bai1{
+    color: rgb(200, 127, 200);
+    font-size: 150px;
+}
+.input-todo{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(219, 215, 215);
+}
+.list-todos{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(219, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.list-todo-false{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(219, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: line-through;
+}
+.form-todos{
+    /* text-align: center; */
+    /*      background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.check{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border: 0.5px solid black;
+}

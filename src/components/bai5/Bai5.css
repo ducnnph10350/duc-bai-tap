@@ -1,0 +1,15 @@
+.container-bai5{
+   background-image: linear-gradient(90deg, rgb(213, 213, 199), rgb(225, 240, 139));
+   width: 100%;
+   text-align: center;
+}
+.title-bai5{
+    font-size: 30px;
+    font-weight: 500;
+}
+.main-bai5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

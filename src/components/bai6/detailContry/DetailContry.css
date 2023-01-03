@@ -1,0 +1,45 @@
+.container-contry-detail{
+    width: 80%;
+   
+}
+.main-contry-detail{
+    display: flex;
+    justify-content: space-between; 
+}
+.img-contry-detail{
+ width: 400px;
+}
+.info-contry-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.div-info-detail{
+    width: 400px;
+}
+.name-contry-detail{
+    font-size: 30px;
+    font-weight: 700;
+}
+.info-all-detail{
+    font-weight: 700;
+    margin: 10px 0 ;
+}
+.data-detail-info{
+    font-weight: 400;
+}
+.btn-btn-back-bai6{
+    width: 150px;
+    height: 30px;
+    margin: 10px 0;
+}
+.div-btn-detail{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-boders-detail{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px 1px rgb(73, 73, 73);
+}
