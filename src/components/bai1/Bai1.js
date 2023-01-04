@@ -17,11 +17,13 @@ export default function Bai1() {
     await axios.delete(
       `https://62a00597a9866630f80561eb.mockapi.io/v1/todos/${id}`
     );
+    // ko phaải gán
     const x = [...listTodo];
     const a = x.filter((item) => item.id !== id);
     setListTodo(a);
   };
   const handleLeftClick = async (id) => {
+    console.log(id);
     // const res = await axios.get(
     //   `https://62a00597a9866630f80561eb.mockapi.io/v1/todos/${id}`
     // );
@@ -41,6 +43,10 @@ export default function Bai1() {
         break;
       }
     }
+    // const updateList = listTodo.map((item) => ({
+    //   ...item,
+    //   isCompleted: item.id === id ? res.data.isCompleted : item.isCompleted,
+    // }));
     setListTodo(x);
   };
 
@@ -53,40 +59,41 @@ export default function Bai1() {
     e.preventDefault();
     const data = { name: value, isCompleted: false };
 
-    await axios.post(
+    const res = await axios.post(
       `https://62a00597a9866630f80561eb.mockapi.io/v1/todos/`,
       data
     );
 
-    setValueInput("");
-    const x = [...listTodo];
+    // setValueInput("");
+    // const x = [...listTodo];
 
-    x.push(data);
-    // console.log(x);
-    setListTodo(x);
+    // x.push(res);
+    setListTodo((prev) => {
+      return [...prev, res];
+    });
   };
 
   const getData = async () => {
-    const res = await axios.get(
-      "https://62a00597a9866630f80561eb.mockapi.io/v1/todos"
-    );
+    try {
+      const res = await axios.get(
+        "https://62a00597a9866630f80561eb.mockapi.io/v1/todos"
+      );
 
-    setListTodo(res.data);
+      console.log(res.data);
+      setListTodo(res.data);
+    } catch (err) {
+      setListTodo([]);
+    }
   };
 
   useEffect(() => {
     getData();
   }, []);
 
-  useEffect(() => {
-    console.log("list", listTodo);
-  }, [listTodo]);
-
   return (
     <>
       <div>
         <button className="btn-back" onClick={handleBackPage}>
-          {" "}
           Back
         </button>
       </div>
@@ -97,7 +104,7 @@ export default function Bai1() {
             <form onSubmit={(e) => handleSubmit(e)}>
               <input
                 value={valueInput}
-                onChange={(e) => handleChange(e)}
+                onChange={handleChange}
                 className="input-todo"
                 type="text"
                 placeholder="Enter your todo"
@@ -109,9 +116,7 @@ export default function Bai1() {
                 id={e.id}
                 onContextMenu={(e) => handleRightClick(e)}
                 onClick={() => handleLeftClick(e.id)}
-                className={
-                  e.isCompleted === true ? "list-todos" : "list-todo-false"
-                }
+                className={!e.isCompleted ? "list-todos" : "list-todo-false"}
               >
                 {e.name}
               </div>

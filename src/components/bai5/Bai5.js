@@ -33,12 +33,6 @@ export default function Bai5() {
           <ListPoke data={listPokes}></ListPoke>
         </div>
       </div>
-      <div className="container-bai5">
-        <p className="title-bai5">Pokedex</p>
-        <div className="main-bai5">
-          <ListPoke data={listPokes}></ListPoke>
-        </div>
-      </div>
     </>
   );
 }

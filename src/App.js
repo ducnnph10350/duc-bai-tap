@@ -9,6 +9,28 @@ import Bai6 from "./components/bai6/Bai6";
 import Bai3 from "./components/bai3/Bai3";
 import { useNavigate } from "react-router-dom";
 
+const buttons = [
+  { id: "1", pathname: "/bai1", title: "Pokedex" },
+  { id: "2", pathname: "/bai1", title: "Pokedex" },
+  { id: "3", pathname: "/bai1", title: "Pokedex" },
+  { id: "4", pathname: "/bai1", title: "Pokedex" },
+  { id: "5", pathname: "/bai1", title: "Pokedex" },
+  { id: "6", pathname: "/bai1", title: "Pokedex" },
+  { id: "7", pathname: "/bai1", title: "Pokedex" },
+];
+
+// high order function
+
+// const handleBtnItem = (btn) => (event) => {
+//   navigate(btn.pathname)
+// }
+
+// buttons.map(btn => (
+//   <button onClick={handleBtnItem(btn)}>
+//     {btn.title}
+//   </button>
+// ))
+
 function App() {
   const navigate = useNavigate();
   const handleTodo = () => {

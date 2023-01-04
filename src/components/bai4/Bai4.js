@@ -3,6 +3,7 @@ import "./Bai4.css";
 import axios from "axios";
 import List from "./listMovie/List";
 import { useNavigate } from "react-router-dom";
+
 export default function Bai4() {
   const [list, setList] = useState([]);
   const navigate = useNavigate();
@@ -18,7 +19,6 @@ export default function Bai4() {
   useEffect(() => {
     getData();
   }, []);
-  console.log(list);
   return (
     <div className="container-bai4">
       <div className="header-search">

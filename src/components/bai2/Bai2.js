@@ -34,7 +34,7 @@ export default function Bai2() {
           Back
         </button>
       </div>
-      <div className="App">
+      <div className="App-2">
         <div className="main">
           <div className="main-text">
             <p className="title">Don't laugh challenge</p>
@@ -50,3 +50,10 @@ export default function Bai2() {
     </div>
   );
 }
+
+// https://uiverse.io/all?fbclid=IwAR2azh3c7KowpZ65B43pVg9zDTR1UwmRJ61JlTLTvvskinuO6AN9Ndqjnnw
+
+// https://ui-buttons.web.app/?fbclid=IwAR2qBH2ALv7TnHrdudb9SADH8RaRdZ5XPQW-1EolwwH-4cEU8RKVyOmw5bE
+// https://kentcdodds.com/blog/usememo-and-usecallback
+
+// https://github.com/webuild-community/advent-of-frontend?fbclid=IwAR0npQecBrTR4gkiJ3OkZ3mX60SjJbTQdZ6q6ltaft8e6jJLPTB8Ra77WR8

@@ -1,17 +1,19 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import useBackToPage from "../../hooks/useBack";
 import "./Bai3.css";
 import NotFound from "./user-bai3/NotFound";
 import User from "./user-bai3/User";
+
 export default function Bai3() {
   const [data, setData] = useState();
   const [value, setValue] = useState("");
   const [status, setStatus] = useState(true);
   const navigate = useNavigate();
-  const handleBackPage = () => {
-    navigate("/");
-  };
+
+  const { onBack } = useBackToPage();
+
   const handleChange = (e) => {
     setValue(e.target.value);
   };
@@ -20,6 +22,7 @@ export default function Bai3() {
 
     try {
       const res = await axios.get(`https://api.github.com/users/${value}`);
+      console.log({ res });
       setData(res.data);
       setStatus(true);
       setValue("");
@@ -33,7 +36,7 @@ export default function Bai3() {
     <>
       <div className="background-bai3">
         <div>
-          <button className="btn-back" onClick={handleBackPage}>
+          <button className="btn-back" onClick={onBack}>
             Back
           </button>
         </div>
@@ -52,9 +55,7 @@ export default function Bai3() {
               {status ? (
                 !!data && Object.keys(data).length > 0 ? (
                   <User user={data} />
-                ) : (
-                  <div></div>
-                )
+                ) : null
               ) : (
                 <NotFound />
               )}
